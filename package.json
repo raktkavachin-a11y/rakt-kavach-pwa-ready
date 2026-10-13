@@ -1,0 +1,23 @@
+{
+  "name": "raktkavach-in",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": "20.x",
+    "pnpm": "9.x"
+  },
+  "workspaces": [
+    "artifacts/*",
+    "lib/*",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "pnpm --filter @workspace/rakt-kavach run build",
+    "dev": "pnpm --filter @workspace/rakt-kavach run dev",
+    "start": "pnpm --filter @workspace/rakt-kavach run start"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
