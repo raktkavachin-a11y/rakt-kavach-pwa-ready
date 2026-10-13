@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": "20.x",
+    "node": "24.x",
     "pnpm": "9.x"
   },
   "workspaces": [
@@ -13,7 +13,7 @@
     "scripts"
   ],
   "scripts": {
-    "build": "pnpm --filter @workspace/rakt-kavach run build",
+    "build": "pnpm --filter @workspace/rakt-kavach run build || vite build artifacts/rakt-kavach",
     "dev": "pnpm --filter @workspace/rakt-kavach run dev",
     "start": "pnpm --filter @workspace/rakt-kavach run start"
   },
